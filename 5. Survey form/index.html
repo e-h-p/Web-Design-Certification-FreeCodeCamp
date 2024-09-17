@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Survey</title>
+  <link rel="stylesheet" href="styles.css"> </head>
+<body>
+  <h1 id="title">Customer Satisfaction Survey</h1>
+  <p id="description">Please share your feedback to help us improve!</p>
+
+  <form id="survey-form">
+    <h2>Customer Information</h2>
+    <div>
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label for="email" id="email-label">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="your_email@example.com" required>
+    </div>
+
+    <h2>Rate Our Service</h2>
+    <div>
+      <label for="number" id="number-label">How likely are you to recommend us to a friend? (1 = Not Likely, 5 = Very Likely)</label>
+      <input type="number" id="number" name="rating" min="1" max="5" placeholder="Enter a number (1-5)" required>
+    </div>
+
+    <h2>Additional Feedback</h2>
+    <div>
+      <label for="dropdown">Department you contacted:</label>
+      <select id="dropdown" name="department">
+        <option value="">Select Department</option> <option value="sales">Sales</option>
+        <option value="support">Support</option>
+        <option value="billing">Billing</option> </select>
+    </div>
+    <div>
+      <label for="feedback-text">What did you like most about our service?</label>
+      <textarea id="feedback-text" name="feedback_text" rows="4" placeholder="Share your thoughts"></textarea>
+    </div>
+    <div>
+      <label>How can we improve our service?</label>
+      <br>
+      <input type="radio" id="improve-radio1" name="improvement" value="option1"> Option 1
+      <br>
+      <input type="radio" id="improve-radio2" name="improvement" value="option2"> Option 2
+      <br>
+      <input type="radio" id="improve-radio3" name="improvement" value="option3"> Option 3
+      <br>
+      <input type="text" id="improve-other" name="improvement_other" placeholder="Other (Please Specify)"> (Optional)
+    </div>
+    <div>
+      <input type="checkbox" id="checkbox1" name="feedback_options[]" value="option1"> Option 1 (Feedback Choice)
+      <br>
+      <input type="checkbox" id="checkbox2" name="feedback_options[]" value="option2"> Option 2 (Feedback Choice)
+      <br>
+      <input type="checkbox" id="checkbox3" name="feedback_options[]" value="option3"> Option 3 (Feedback Choice)
+    </div>
+
+    <button type="submit" id="submit">Submit Survey</button>
+  </form>
+</body>
+</html>

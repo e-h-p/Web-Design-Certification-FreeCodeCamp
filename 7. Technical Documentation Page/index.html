@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="h">Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Getting_Started_With_Java">Getting Started With Java</a></li>
+            <li><a class="nav-link" href="#Java_Entry_Point">Java Entry Point</a></li>
+            <li><a class="nav-link" href="#Printing_to_the_console">Printing to the Console</a></li>
+            <li><a class="nav-link" href="#Declaring_Functions">Declaring Functions</a></li>
+            <li><a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Getting_Started_With_Java">
+            <header>Getting Started With Java</header>
+            <p>Steps in getting started</p>
+            <ol>
+                <li>Download Java</li>
+                <li>Download Java SDK</li>
+                <li>Get an Integrated Development Environment (IDE)</li>
+                <li>Start a project within the IDE</li>
+                <li>Code up "Hello World" and run the code</li>
+            </ol>
+            <pre>
+        <code>
+        </code>
+      </pre>
+        </section>
+        <section class="main-section" id="Java_Entry_Point">
+            <header>Java Entry Point</header>
+            <p>The entry point to a Java application is the main function.</p>
+            <p>It is categorized by its (String[] args) as a parameter to the function.</p>
+            <pre>
+        <code>
+        public class MyFunction {
+          /* Java main function example */
+          public static void main(String[] args) {
+            System.out.println("Hello World");
+          }
+        }
+        </code>
+      </pre>
+            <p>
+                As you can see, the main function is wrapped within a class, which is part of the object-oriented
+                structure of Java projects.
+            </p>
+        </section>
+        <section class="main-section" id="Printing_to_the_console">
+            <header>Printing to the Console</header>
+            <p>In order to print to the console, we use System.out.println.</p>
+            <p>I know, it is very long and cumbersome, but it is the way this is done.</p>
+            <pre>
+        <code>
+        public class MyFunction {
+          /* Java main function example */
+          public static void main(String[] args) {
+            System.out.println("Hello World");
+          }
+        }
+        </code>
+      </pre>
+            <p>
+                In this example, we are printing out "Hello World" to the console when we run the program.
+            </p>
+        </section>
+        <section class="main-section" id="Declaring_Functions">
+            <header>Declaring Functions</header>
+            <p>Functions are actually called methods in Java. Here is an example of how to declare a Java method:</p>
+            <img src="data:image/jpeg;base64,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"
+                alt="Java-method" class="image" />
+            <p>
+                Some copiable code:
+            </p>
+            <pre>
+      <code>
+        Public static void myfunction(String name, int age)
+        {
+           //function code
+        }
+</code>
+    </pre>
+        </section>
+        <section class="main-section" id="Object_Oriented_Programming">
+            <header>Object Oriented Programming</header>
+            <p>Java is known as object oriented programming language.</p>
+            <p>This means that it is to represent entities as objects by using classes ans encapsulation. </p>
+            <p>An example of this might be a Student class to represent a student
+            </p>
+            <pre>
+  <code>
+    //Student.java
+    import java.util.ArrayList;
+
+    public class Student {
+    private String name;
+    private int grade;
+    private ArrayList < String > courses;
+
+    public Student(String name, int grade) {
+   this.name = name;
+   this.grade = grade;
+   this.courses = new ArrayList < String > ();
+   }
+
+   public String getName() {
+   return name;
+  }
+
+  public int getGrade() {
+  return grade;
+   }
+
+  public ArrayList < String > getCourses() {
+  return courses;
+    }
+
+  public void addCourse(String course) {
+  courses.add(course);
+   }
+
+   public void removeCourse(String course) {
+   courses.remove(course);
+   }
+  public void printStudentDetails() {
+  System.out.println("Name: " + name);
+  System.out.println("Grade: " + grade);
+   }
+
+      }
+
+</code>
+</pre>
+            <ul>
+                <li>*Class:* A blueprint that defines the properties (attributes) and behavior (methods) of objects.
+                </li>
+                <li>*Object:* An instance of a class. It has its own set of attributes and can call the methods defined
+                    in the class.</li>
+                <li>*Inheritance:* Allows you to create new classes (subclasses) that inherit properties and behavior
+                    from existing classes (superclasses).</li>
+                <li>*Encapsulation:* Bundles data (attributes) together with methods that operate on that data,
+                    protecting the data from direct access by other parts of the program.</li>
+                <li>*Polymorphism:* Allows objects of different classes to respond differently to the same method call.
+                </li>
+            </ul>
+            <p>OOP helps to create modular, reusable, and maintainable code. It's a fundamental concept in Java
+                programming.</p>
+            <p class="para">We can know further using <a href=https://www.w3schools.com/java>this site</p>
+        </section>
+    </main>
+</body>
+
+</html>
